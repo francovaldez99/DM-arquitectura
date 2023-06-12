@@ -1,0 +1,33 @@
+.contact-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .contact-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .contact-item {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  
