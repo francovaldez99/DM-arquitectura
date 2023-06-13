@@ -58,11 +58,13 @@
     }
     .links{
       position: initial;
+     
       margin: 0;
     }
     .nav-container{
       position: absolute;
       top: 5px;
+       text-align: center;
       background-color: transparent;
  
     }
@@ -93,6 +95,7 @@
     height: 100%;
     z-index: 1;
     transition: all .6s ease ;
+     text-align: center;
   }
   .active{
     border-radius: 0 0 0 0;
