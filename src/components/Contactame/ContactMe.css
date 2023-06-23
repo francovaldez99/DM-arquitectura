@@ -37,7 +37,7 @@ box-shadow: 0 15px 25px rgba(0,0,0,.6);
 .contact-area-text h3 {
   color: #fff;
 }
-.contactanos-por-whatsaapp {
+.contactanos-por-whatsaapp ,.enviar{
   padding: 15px 25px;
   border: unset;
   border-radius: 15px;
@@ -144,4 +144,12 @@ box-shadow: 0 15px 25px rgba(0,0,0,.6);
 .mensaje-click{
   display: none;
   visibility: none;
+}
+.botones-contactos-telefonos{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90px;
+
 }

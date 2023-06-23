@@ -2,6 +2,7 @@ import React,{useRef,useState} from "react";
 import "./ContactMe.css";
 import { AiOutlinePhone } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
+import {FiInstagram} from "react-icons/fi"
 import emailjs from '@emailjs/browser';
 
 
@@ -52,33 +53,51 @@ const ContactMe = () => {
   
   return (
     <>
-      <h2 className='contact-title' id="contacto">Contactanos</h2>
+      <h2 className="contact-title" id="contacto">
+        Contactanos
+      </h2>
       <div className="contact-container">
         <article className="contact-area-text">
           <div>
             <h2>
               ¡Contáctanos ahora mismo para recibir asesoramiento y obtener un
-              presupuesto para tu proyecto! 
+              presupuesto para tu proyecto!
             </h2>
           </div>
 
-          
-          <div>
+          <div className="botones-contactos-telefonos">
             <h3>
               <AiOutlinePhone /> +54 9 3513 22-1097
             </h3>
-          </div>
-            <div>
-              <h3>
-                <AiOutlinePhone /> +54 9 3775 63-9144
-              </h3>
-            </div>
-          <div>
             <h3>
-              
-              <a href="https://wa.me/5493513221097" target="_blank" rel="noreferrer" className="contactanos-por-whatsaapp"><BsWhatsapp />   Contactanos por whatsapp</a>
+              <AiOutlinePhone /> +54 9 3775 63-9144
             </h3>
           </div>
+          <div>
+            <h3>
+              <a
+                href="https://wa.me/5493513221097"
+                target="_blank"
+                rel="noreferrer"
+                className="contactanos-por-whatsaapp"
+              >
+                <BsWhatsapp /> Contactanos por whatsapp
+              </a>
+            </h3>
+          </div>
+          <div>
+          <h3>
+              <a
+                href="https://www.instagram.com/dymarquitectura/"
+                target="_blank"
+                rel="noreferrer"
+                className="contactanos-por-whatsaapp"
+              >
+                <FiInstagram /> Contactanos por Instagram
+              </a>
+            </h3>
+          </div>
+
         </article>
 
         <form ref={form} className="contact-area-form" onSubmit={handlerSubmit}>
@@ -89,20 +108,19 @@ const ContactMe = () => {
           </div>
           <div>
             <label htmlFor="email">email</label>
-            <input type="text" id="email"  name="user_email"/>
+            <input type="text" id="email" name="user_email" />
           </div>
 
           <div>
             <label htmlFor="mensaje">Mensaje</label>
             <textarea id="mensaje" name="message"></textarea>
           </div>
-          <button className="cta-button">{Clicked ? <Loader/> :"Enviar"}</button>
+          <button className="cta-button enviar">
+            {Clicked ? <Loader /> : "Enviar"}
+          </button>
 
-          <div>
-
-        </div>
+          <div></div>
         </form>
-        
       </div>
     </>
   );

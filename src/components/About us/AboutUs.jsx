@@ -7,8 +7,8 @@ const AboutUs = () => {
       <div className="company-presentation" id="nosotros">
         <h2>Nosotros</h2>
         <p className="company-presentation-text">
-          Somos un equipo de estudiantes avanzados .
-          <br /> Nos apasiona la arquitectura y ofrecemos
+          Somos un equipo de estudiantes avanzados.
+          Nos apasiona la arquitectura y ofrecemos
           servicios y asesoramiento personalizados. Trabajamos estrechamente con
           nuestros clientes para convertir sus ideas en proyectos
           arquitectónicos impresionantes. Valoramos la creatividad, la
