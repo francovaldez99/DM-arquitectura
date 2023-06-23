@@ -1,4 +1,4 @@
-import logo from "../../assets/imagenes/Recurso 1@4x.png"
+import logo from "../../assets/Recurso 1.svg"
 import React from 'react'
 import { useState  } from 'react'
 import "./Nav.css"
