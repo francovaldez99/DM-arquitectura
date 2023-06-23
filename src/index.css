@@ -11,11 +11,14 @@ box-sizing: border-box;
 html{
   scroll-behavior: smooth;
 }
-h2,h3,button{
+h2,h3,button,button{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
-p,a{
+p,a,label{
   font-family: 'Poppins', sans-serif;
 
+}
+a{
+  text-decoration: none;
 }

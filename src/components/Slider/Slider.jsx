@@ -16,7 +16,7 @@ const Slider = ({ images }) => {
   return (
     <div className="slider">
       
-      <img className="slide-image" src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
+      <img className={`slide-image`} src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
       <button className="prev-button" onClick={prevSlide}>
         &#10094;
       </button>

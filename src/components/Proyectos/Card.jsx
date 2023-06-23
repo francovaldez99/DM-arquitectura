@@ -35,7 +35,9 @@ function Card({proyecto}) {
           handleModalClose={handleModalClose}
                         >
                             <h2 style={{textAlign:"center"}}>{proyecto.titulo}</h2>
-                        <p className='proyecto-tipo'>{proyecto?.texto}</p>
+                            <p className='proyecto-tipo'>
+      <span dangerouslySetInnerHTML={{ __html: proyecto?.texto }}></span>
+    </p>
                        {
                         proyecto.carruselImagenes &&
                        

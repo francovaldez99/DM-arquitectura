@@ -1,5 +1,4 @@
 
-import Nav from './components/Nav/Nav';
 import Inicio from './components/Inicio/Inicio';
 
 import Proyectos from './components/Proyectos/Proyectos';
@@ -12,13 +11,13 @@ import AboutUs from './components/About us/AboutUs';
 function App() {
   return (
     <div className="App">
-      <Nav/>
+   
       <Inicio/>
       <NuestroTrabajo/>
       <Servicios/>
       <Proyectos/>
-      <AboutUs/>
       <ContactMe/>
+      <AboutUs/>
     </div>
   );
 }

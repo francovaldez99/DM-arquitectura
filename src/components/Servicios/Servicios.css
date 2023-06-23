@@ -6,7 +6,7 @@ margin-bottom: 100px;
 display: flex;
 justify-content: space-evenly;
 flex-direction: column;
-background: url(https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+background: url("../../assets/imagenes/redd-f-vUwJ8uu_C1M-unsplash.jpg");
 background-size: cover;
 
 
@@ -16,7 +16,8 @@ background-size: cover;
 text-align: center;
 font-size: 2.7rem;
 font-family: 'Poppins', sans-serif;
-color: #fff;
+color: #212529;
+font-weight: bold;
 
 
 }
@@ -31,8 +32,9 @@ color: #fff;
     min-width: 150px;
     margin: 10px 10px;
     text-align: center;
-    background-color: #fff;
-background: #fff;
+    background-color: #495057;
+color: #fff;
+border-radius: 20px;
 
              
 }

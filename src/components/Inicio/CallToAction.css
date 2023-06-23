@@ -1,20 +1,27 @@
 
 
 .cta-container {
-    background-color: #f8f8f8;
+    background-color: transparent;
     text-align: center;
     min-height: 90vh;
     background: url("../../assets/imagenes/Recurso\ 1.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-padding: 50px;
-    
+    padding: 50px;
+
   }
+  .cta-div{
+    height: 374px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   
+  }
   .cta-title {
     
     font-size: 32px;
@@ -25,8 +32,7 @@ padding: 50px;
   .cta-description {
     font-size: 22px;
     text-align: center;
-    
-    
+
   }
   
   /* .cta-button {
@@ -51,6 +57,7 @@ padding: 50px;
     border-radius: 4px;
     font-size: 22px;
     cursor: pointer;
+    text-decoration: none;
   }
   
   .cta-button:hover {

@@ -1,38 +1,35 @@
-import React, { useState } from 'react';
-import './Nav.css';
 import logo from "../../assets/imagenes/Recurso 1@4x.png"
-import logodiego from "../../assets/logodiego.svg"
-import BurguerButton from './BurguerButton';
-const Nav = () => {
-  const [clicked, setClicked] = useState(false)
+import React from 'react'
+import { useState  } from 'react'
+import "./Nav.css"
+import {FaBars,FaTimes} from "react-icons/fa"
+function Nav() {
+  const [isOpen,SetIsOpen]=useState(false)
+  function changeStatusOpen() {
+    SetIsOpen(!isOpen)
 
-  const handleClick = () => {
-   if (window.innerWidth   < 768) {
-     setClicked(!clicked)
-     
   }
-  }
-
   return (
-    <nav className="nav-container">
-  
-      <ul className={`nav-list links ${clicked ? 'active':''}`}>
-        <li className={`nav-item ${clicked ? 'item-active':''}`}>   <img src={logo} alt="logo"
-        width="70px" /></li>
-        <li className={`nav-item ${clicked ? 'item-active':''}`}><a href="#inicio" onClick={handleClick}>Inicio</a></li>
-        <li className={`nav-item ${clicked ? 'item-active':''}`}><a href="#nosotros" onClick={handleClick}>Nosotros</a></li>
-        <li className={`nav-item ${clicked ? 'item-active':''}`}><a href="#servicios" onClick={handleClick}>Servicios</a></li>
-        <li className={`nav-item ${clicked ? 'item-active':''}`}><a href="#proyectos" onClick={handleClick}>Proyectos</a></li>
+    <div className='nav-container'>
+      <a href='#inicio'><img  className='logo-img' src={logo} alt="logo-DM" /></a>
+            <nav className={`nav ${isOpen? "responsive-nav":""}`}>
+            <button className='nav-btn nav-close-btn' onClick={changeStatusOpen}>
+                <FaTimes/>
+            </button>
+                <a href="#inicio" className='nav-item'  onClick={changeStatusOpen}>Inicio</a>
+                <a href="#servicios" className='nav-item'  onClick={changeStatusOpen}>Servicios</a>
+                <a href="#proyectos" className='nav-item'  onClick={changeStatusOpen}>Proyectos</a>
+                <a href="#nosotros" className='nav-item'  onClick={changeStatusOpen}>Nosotros</a>
+                <a href="#contacto" className='nav-item '  onClick={changeStatusOpen}>Contactos</a>
 
-        <li className={`nav-item ${clicked ? 'item-active':''}`}><a href="#contactos" onClick={handleClick}>Contacto</a></li>
-        
-      </ul>
-      <div className='burguer'>
-            <BurguerButton clicked={clicked} handleClick={handleClick} />
-        </div>
-        <div className={`bg-div initial ${clicked ? 'active':''}`}></div>
-    </nav>
-      );
-};
 
-export default Nav;
+            </nav>
+
+            <button  className="nav-btn" onClick={changeStatusOpen}>
+              <FaBars/>
+            </button>
+    </div>
+  )
+}
+
+export default Nav
