@@ -3,6 +3,7 @@ import "./Servicios.css";
 import {MdOutlineArchitecture} from "react-icons/md"
 import {VscTools} from "react-icons/vsc"
 import {ImPencil2} from "react-icons/im"
+import {AiFillCheckCircle} from "react-icons/ai"
 function Servicios() {
   return (
       <div>
@@ -16,9 +17,9 @@ function Servicios() {
             </h2>
             <div  className="text-servicio">
               <ul style={{listStyle:"inherit",textAlign:"left"}}>
-                <li> <h3>Boceto inicial.</h3></li>
-              <li><h3>Diseño  plano en software.</h3></li>
-              <li><h3>Proceso de presentación y entrega el servicio.</h3></li>
+                <li> <h3><span><AiFillCheckCircle/></span>  Boceto inicial.</h3></li>
+              <li><h3><span><AiFillCheckCircle/></span>  Diseño  plano en software.</h3></li>
+              <li><h3><span><AiFillCheckCircle/></span>  Proceso de presentación y entrega el servicio.</h3></li>
               </ul>
             </div>
           </article>
@@ -29,9 +30,9 @@ function Servicios() {
             </h2>
             <div className="text-servicio">
           <ul>
-            <li><h3>Evaluación y planificación personalizada.</h3></li>
-            <li><h3>Diseño innovador y creativo.</h3></li>
-            <li><h3>Ejecución impecable y resultados excepcionales.</h3></li>
+            <li><h3><span><AiFillCheckCircle/></span>  Evaluación y planificación personalizada.</h3></li>
+            <li><h3><span><AiFillCheckCircle/></span>  Diseño innovador y creativo.</h3></li>
+            <li><h3><span><AiFillCheckCircle/></span>  Ejecución impecable y resultados excepcionales.</h3></li>
         
           </ul>
             </div>
@@ -43,9 +44,9 @@ function Servicios() {
             </h2>
             <div className="text-servicio">
               <ul>
-                <li><h3>Evaluación personalizada del espacio.</h3></li>
-                <li><h3>Diseño creativo. </h3></li>
-                <li><h3>Implementación profesional y transformación del espacio.</h3></li>
+                <li><h3><span><AiFillCheckCircle/></span>  Evaluación personalizada del espacio.</h3></li>
+                <li><h3><span><AiFillCheckCircle/></span>  Diseño creativo. </h3></li>
+                <li><h3><span><AiFillCheckCircle/></span>  Implementación profesional y transformación del espacio.</h3></li>
               </ul>
             </div>
           </article>

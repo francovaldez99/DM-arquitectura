@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
+import {BsLinkedin} from 'react-icons/bs'
 
 const AboutUs = () => {
   return (
@@ -47,8 +48,9 @@ const AboutUs = () => {
               href="https://www.linkedin.com/in/diego-mongel%C3%B3s-9a07b5239/"
               target="_blank"
               rel="noopener noreferrer"
+              className="contactanos-por-whatsaapp btn-ir-a-linkedin"
             >
-              <button className="linkedin-button">Ir a LinkedIn</button>
+              <><BsLinkedin/> Ir a LinkedIn</>
             </a>
           </div>
         </div>
@@ -82,8 +84,9 @@ const AboutUs = () => {
               href="https://www.linkedin.com/in/mat%C3%ADas-ezequiel-izquierdo-itterman-922a07239/"
               target="_blank"
               rel="noopener noreferrer"
+              className="contactanos-por-whatsaapp btn-ir-a-linkedin"
             >
-              <button className="linkedin-button">Ir a LinkedIn </button>
+              < ><BsLinkedin/> Ir a LinkedIn </>
             </a>
           </div>
         </div>
