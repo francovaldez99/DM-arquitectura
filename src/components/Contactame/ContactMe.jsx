@@ -29,9 +29,9 @@ function Loader() {
 
 const ContactMe = () => {
   const form = useRef();
-  const YOUR_SERVICE_ID=process.env.YOUR_SERVICE_ID
-  const  YOUR_TEMPLATE_ID =process.env.YOUR_TEMPLATE_ID
-  const YOUR_PUBLIC_KEY =process.env.YOUR_PUBLIC_KEY
+  const YOUR_SERVICE_ID=process.env.REACT_APP_YOUR_SERVICE_ID
+  const  YOUR_TEMPLATE_ID =process.env.REACT_APP_YOUR_TEMPLATE_ID
+  const YOUR_PUBLIC_KEY =process.env.REACT_APP_YOUR_PUBLIC_KEY
   const [Clicked, SetClicked] = useState(false)
 
   const handlerSubmit = (e)=>{
@@ -40,14 +40,21 @@ const ContactMe = () => {
     setTimeout(() => {
       SetClicked(false)
     }, 1000);
+    if(!YOUR_PUBLIC_KEY || !YOUR_TEMPLATE_ID || !YOUR_SERVICE_ID){
+      console.log("algo salio mal en las variables de entorno");
+      return
+    }
     emailjs.sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, YOUR_PUBLIC_KEY)
     .then((result) => {
         console.log(result.text);
 
         form.current.reset();
+        alert("Mensaje enviado")
 
     }, (error) => {
         console.log(error.text);
+        alert("Fallo al enviar mensaje")
+
     });
   }
   

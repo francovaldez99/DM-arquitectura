@@ -70,3 +70,7 @@ height: 100%;
 text-align: justify;
 
 }
+.text-servicio ul li h3{
+    display: flex;
+    text-align: center;
+}
